@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/rent-app/static/css/main.6088ff5c.chunk.css",
+    "main.js": "/rent-app/static/js/main.b2499680.chunk.js",
+    "main.js.map": "/rent-app/static/js/main.b2499680.chunk.js.map",
+    "runtime-main.js": "/rent-app/static/js/runtime-main.25cf1eb0.js",
+    "runtime-main.js.map": "/rent-app/static/js/runtime-main.25cf1eb0.js.map",
+    "static/js/2.7c5ebc0c.chunk.js": "/rent-app/static/js/2.7c5ebc0c.chunk.js",
+    "static/js/2.7c5ebc0c.chunk.js.map": "/rent-app/static/js/2.7c5ebc0c.chunk.js.map",
+    "index.html": "/rent-app/index.html",
+    "static/css/main.6088ff5c.chunk.css.map": "/rent-app/static/css/main.6088ff5c.chunk.css.map",
+    "static/js/2.7c5ebc0c.chunk.js.LICENSE.txt": "/rent-app/static/js/2.7c5ebc0c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.25cf1eb0.js",
+    "static/js/2.7c5ebc0c.chunk.js",
+    "static/css/main.6088ff5c.chunk.css",
+    "static/js/main.b2499680.chunk.js"
+  ]
+}
