@@ -1,6 +1,7 @@
 {
+  "homepage": "http://ih16.github.io/rent-app",
   "name": "rent-app",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.3.0",
@@ -9,6 +10,7 @@
     "@testing-library/user-event": "^12.1.10",
     "dayjs": "^1.10.7",
     "fuse.js": "^6.4.6",
+    "gh-pages": "^3.2.3",
     "install-peerdeps": "^3.0.3",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -21,7 +23,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
