@@ -74,13 +74,11 @@ function App() {
               setBookingModal={setBookingModal}
             />
           }
-          buttonJustify="end"
           form="bookingForm"
         />
       )}
       {returnModal && (
         <Modal
-          buttonJustify="end"
           setModalState={setReturnModal}
           title="Return a Product"
           form="returnForm"

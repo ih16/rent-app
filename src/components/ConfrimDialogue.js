@@ -20,7 +20,6 @@ function ConfrimDialogue({ title, state, setState }) {
       closeLabel="No"
       submitCallback={state.action}
       closeCallback={() => setState(current => ({ ...current, open: false }))}
-      buttonJustify="end"
     />
   );
 }
