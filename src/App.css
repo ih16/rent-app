@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+tbody::-webkit-scrollbar {
+  width: 8px;
+  @apply bg-gray-100;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Handle */
+tbody::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Handle on hover */
+tbody::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
+tr:nth-child(even) {
+  @apply bg-gray-50;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+table thead,
+table tbody tr {
+  @apply table table-fixed w-full;
 }
 
-.App-link {
-  color: #61dafb;
+.bottomRevealEffect {
+  position: relative;
+  animation-name: animateBottom;
+  animation-duration: 0.3s;
 }
 
-@keyframes App-logo-spin {
+.fadeInEffect {
+  animation-name: animateFadeIn;
+  animation-duration: 0.25s;
+}
+
+.spinner {
+  animation: spin infinite 0.5s linear;
+}
+
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes animateBottom {
+  0% {
+    top: 300px;
+    opacity: 0;
+  }
+  80% {
+    top: -20px;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes animateFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
