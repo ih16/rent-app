@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 import PropTypes from 'prop-types';
-import { FiTool } from 'react-icons/fi';
+import { FiAlertCircle, FiTool } from 'react-icons/fi';
 import { BsSpeedometer2 } from 'react-icons/bs';
 import { IoCalendarOutline } from 'react-icons/io5';
 import Select from './Select';
@@ -170,8 +170,9 @@ function Booking({
         )}
       </form>
       {validationError && (
-        <div className="bg-yellow-100 p-3 mt-2 rounded text-red-600 w-full">
-          {validationError}
+        <div className="bg-yellow-50 p-3 mt-2 rounded text-red-600 w-full flex items-center fadeInEffect">
+          <FiAlertCircle />
+          <span className="ml-2">{validationError}</span>
         </div>
       )}
     </div>
