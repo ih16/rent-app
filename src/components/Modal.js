@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import Button from './Button';
 
 function Modal({
@@ -25,10 +24,9 @@ function Modal({
         <div className="flex w-full justify-start">{content}</div>
         <div className="flex w-full justify-end mt-10 mb-2">
           <Button
-            className="mr-2"
+            className="mr-2 border-blue-400 text-blue-800 hover:border-blue-500"
             type={form ? 'submit' : 'button'}
             form={form}
-            color="blue"
             icon={submitIcon}
             onClick={() => {
               if (submitCallback) submitCallback();
@@ -37,7 +35,7 @@ function Modal({
             {submitLabel}
           </Button>
           <Button
-            color="red"
+            className="border-red-400 text-red-800 hover:border-red-500"
             icon={closeIcon}
             onClick={() => {
               if (closeCallback) closeCallback();

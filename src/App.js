@@ -103,7 +103,11 @@ function App() {
 
       <div className="container max-w-7xl">
         <div className="flex justify-between items-end w-full">
-          <Button onClick={handleResetData} icon={<BiRefresh />} color="yellow">
+          <Button
+            onClick={handleResetData}
+            icon={<BiRefresh />}
+            className="border-yellow-400 text-yellow-800 hover:border-yellow-500"
+          >
             Reset Data
           </Button>
           <Input
@@ -128,8 +132,7 @@ function App() {
         <div className="flex items-center justify-end pt-2 w-full">
           <Button
             onClick={() => setBookingModal(true)}
-            color="blue"
-            className="mr-2"
+            className="mr-2 border-blue-400 text-blue-800 hover:border-blue-500"
             icon={<RiHealthBookLine />}
           >
             Book
@@ -137,7 +140,7 @@ function App() {
           <Button
             onClick={() => setReturnModal(true)}
             icon={<BiUndo />}
-            color="purple"
+            className="border-purple-400 text-purple-800 hover:border-purple-500"
           >
             Return
           </Button>

@@ -64,11 +64,11 @@ function Table({ data, children }) {
           >
             {typeof row[column.dataIndex] === 'boolean' && (
               <span
-                className={`bg-${
-                  row[column.dataIndex] ? 'green' : 'red'
-                }-50 text-${
-                  row[column.dataIndex] ? 'green' : 'red'
-                }-600 py-1 px-3 rounded-full text-xs`}
+                className={`${
+                  row[column.dataIndex] ? 'bg-green-50' : 'bg-red-50'
+                } ${
+                  row[column.dataIndex] ? 'text-green-600' : 'text-red-600'
+                } py-1 px-3 rounded-full text-xs`}
               >
                 {row[column.dataIndex] ? 'Yes' : 'No'}
               </span>

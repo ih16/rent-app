@@ -155,11 +155,13 @@ function Booking({
               </span>
               <span className="text-gray-500 mr-2">Need to fix: </span>
               <span
-                className={`bg-${
-                  selectedProduct.needing_repair ? 'red' : 'green'
-                }-50 text-${
-                  selectedProduct.needing_repair ? 'red' : 'green'
-                }-600 py-1 px-3 rounded-full text-xs`}
+                className={`${
+                  selectedProduct.needing_repair ? 'bg-red-50' : 'bg-green-50'
+                } ${
+                  selectedProduct.needing_repair
+                    ? 'text-red-600'
+                    : 'text-green-600'
+                } py-1 px-3 rounded-full text-xs`}
               >
                 {selectedProduct.needing_repair ? 'Yes' : 'No'}
               </span>
